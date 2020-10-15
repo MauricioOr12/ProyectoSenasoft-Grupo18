@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Proyecto Senasoft</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
+    <!-- header -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" alt="Logo senasoft">
+            </a>
+            <h3 class="title-logo">VIDA Y SALUD</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Inicio</a>
+                    </li>
+                    <button type="button" class="btn btn-primary btn-light btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+                        Contactanos
+                    </button>
+                    </li>  
+                    <li>
+                        <a class="btn btn-inicio pr-2" href="http://127.0.0.1:8000/admin/login/?next=/admin/">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- /header -->
+    <div class="container-fuid pt-5 pb-2 text-center">
+        <h2 class="adjuntar">Formulario Envio de Examenes</h2>
+    </div>
+    <!-- Formulario -->
+    <div class="container">
+        <form action="correo.php" class="pt-5 pb-5" method="post">
+            <div class="form-group">
+                <label for="formGroupExampleInput">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo Destinatario" name="correo">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Asunto</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Asunto del Mensaje" name="asunto">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Mensaje</label>
+                <textarea type="text" class="form-control" id="formGroupExampleInput2" placeholder="Mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="adjuntar" for="exampleFormControlFile1">Adjuntar Archivos</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" class="btn btn-outline-dark" value="ENVIAR" name="archivos">
+            </div>
+            
+        </form>
+    </div>
+    <!-- /Formulario -->
+    <!-- Footer -->
+    <footer id="footer" class="pb-4 pt-4">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 col-lg">
+                <small class="text-light">Derechos reservados@ Copyright 14-10-2020  Estudiantes ADSI</small>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">INFORMACION</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Correo: senacolombia@misena.edu.co
+        </div>
+        <div class="modal-body">
+            Telefono: 32154685 - 2232589
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+  
+</html>
